@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <title>Cat Photo App</title>
+</head>
+<body>
+    <style>
+        .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 50%;
+
+        }
+        .red-text {
+            color: red;
+
+        }
+        p {
+            font-size: 16px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        h2{
+            font-family: Lobster, monospace;
+            background-color: blue;
+
+        }
+        .small-image{
+            width: 100px;
+        }
+    </style>
+    <h2 class="red-text">CatPhotoApp</h2>
+        <main>
+            <h3>Cat Photos</h3>
+       
+            <p class="red-text">Click here to view more <a href="#"> cat photos</a>.</p>
+            
+            <a href="#"><img class="small-image, thick-green-border" src="cats.jpg" alt="cat"></a>
+            <h3>Cat Lists</h3>
+            <div class="lists">
+                <p>Things cat <em>love:</em></p>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointer</li>
+                    <li>lasangna</li>
+                </ul>
+                <img src="lasanga.jpg" alt="lasagna">
+                <p>Things cat <strong>hates:</strong></p>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <img src="cat.jpeg" alt="cats">
+            <form action="/submit-cat-photo">
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label><br>
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor">Outdoor</label><br>
+
+                <label for="loving"><input id="loving" type="checkbox" name="personality" checked>Loving</label><br>
+                <label for="lazy"><input id="lazy" type="checkbox" name="personality">Lazy</label><br>
+                <label for="energetic"><input id="energetic" type="checkbox" name="personality">Energetic</label><br>
+
+                <input type="text" placeholder="cat photo URL" required><br>
+                <button type="submit">Submit</button>
+
+
+            </form>
+        </main>
+        <footer>
+           <p>No Copyright - <small>aasthat.org</small></p>
+
+        </footer>
+   
+    
+</body>
+</html>
